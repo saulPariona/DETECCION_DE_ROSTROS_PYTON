@@ -59,12 +59,3 @@ python opencv-files/OpenCV-Face-Recognition-Python.py
 
 ---
 
-## 5. Solución de Problemas Frecuentes
-
-* FileNotFoundError (Error de ruta): Verifica que la consola esté abierta exactamente en la carpeta raíz asistencia_rostros/ antes de lanzar el comando.
-* Detecciones falsas en el fondo: Si el sistema confunde objetos con rostros, incrementa el parámetro minNeighbors (por ejemplo, súbelo de 7 a 8 o 9) dentro de la función detect_face.
-* Error AttributeError: module 'cv2' has no attribute 'face': Esto ocurre si instalaste la versión incorrecta de OpenCV. Desinstálala y vuelve a instalar la versión extendida ejecutando:
-    ```bash
-    pip uninstall opencv-python
-    pip install opencv-contrib-python
-    ```
