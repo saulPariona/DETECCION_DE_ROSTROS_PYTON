@@ -8,8 +8,9 @@ import numpy as np
 # ==========================================
 # Definimos las rutas basándonos en tu estructura de proyecto
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-TRAIN_DIR = os.path.join(os.path.dirname(BASE_DIR), "training-data")
-CASCADE_PATH = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
+PROYECT_ROOT = os.path.dirname(BASE_DIR)
+TRAIN_DIR = os.path.join(PROYECT_ROOT, "training-data")
+CASCADE_PATH = os.path.join(PROYECT_ROOT, "haarcascade_frontalface_default.xml")
 
 # Mapeo dinámico: el ID 0 se queda vacío como en el tutorial original
 subjects = [""] 
